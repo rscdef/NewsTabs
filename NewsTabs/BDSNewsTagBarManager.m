@@ -41,9 +41,11 @@
 
 - (void)onScrollContentPages:(CGFloat)offset {
     static NSInteger sLastPageIndex = 0;
+    static CGFloat sLastOffset = 0.;
+    
     NSInteger leftPageIndex = floorf(offset);
     NSInteger rightPageIndex = ceil(offset);
-//    NSLog(@"offset: %f sLastPageIndex: %d [%d,%d]", offset, sLastPageIndex, leftPageIndex, rightPageIndex);
+    NSLog(@"offset: %f sLastPageIndex: %d [%d,%d]", offset, sLastPageIndex, leftPageIndex, rightPageIndex);
     
     NSInteger max = 0;
     NSInteger min = 0;
@@ -55,24 +57,60 @@
         min = leftPageIndex;
     }
     
-    if (sLastPageIndex >= max) { // scroll to left page
+    NSInteger newIndex = sLastPageIndex;
+    NSInteger oldIndex = sLastPageIndex;
+    
+    if (sLastPageIndex == min && sLastPageIndex == max) {
+        NSLog(@"--");
+//        if (offset < sLastOffset) { // scroll to left
+//            NSLog(@"(7)");
+//            newIndex++;
+//        } else if (offset > sLastOffset) { // scroll right
+//            NSLog(@"(8)");
+//            newIndex--;
+//        }
+        if (sLastPageIndex == 0) {
+            oldIndex = 1;
+        }
+    } else if (sLastPageIndex >= max) { // scroll to left page
         CGFloat ratio = sLastPageIndex - offset;
+        NSLog(@"<-");
         [_tagBar updateTagColorAtIndex:leftPageIndex withOldIndex:sLastPageIndex andColorRatio:ratio];
     } else if (sLastPageIndex <= min) { //scroll to right page
         CGFloat ratio = offset - sLastPageIndex;
+        NSLog(@"->");
         [_tagBar updateTagColorAtIndex:rightPageIndex withOldIndex:sLastPageIndex andColorRatio:ratio];
     }
     
-    NSInteger newIndex = sLastPageIndex;
-    if (sLastPageIndex > max) {
-        newIndex = max;
-    } else if (sLastPageIndex < min) {
-        newIndex = min;
+    if (newIndex == oldIndex) {
+        if (sLastPageIndex > max) {
+            newIndex = max;
+            NSLog(@"(1)");
+        } else if (sLastPageIndex < min) {
+            newIndex = min;
+            NSLog(@"(2)");
+        } else {
+            NSInteger lastMax = ceil(sLastOffset);
+            NSInteger lastMin = floorf(sLastOffset);
+            NSInteger currMin = floorf(offset);
+            if (lastMax != lastMin) {
+                if (currMin > lastMin) { // currMin > lastMin : 1st -> 2nd; currMin < lastMin : 3rd -> 2nd
+                    oldIndex = newIndex - 1;
+                    NSLog(@"(3)");
+                } else if (currMin < lastMin) {
+                    oldIndex = newIndex + 1;
+                    NSLog(@"(4)");
+                }
+            }
+        }
     }
-    if (sLastPageIndex != newIndex) {
-        [_tagBar updateTagColorAtIndex:newIndex withOldIndex:sLastPageIndex andColorRatio:1.];
+    
+    if (newIndex != oldIndex) {
+        NSLog(@"offset: %f %f", offset, sLastOffset);
+        [_tagBar updateTagColorAtIndex:newIndex withOldIndex:oldIndex andColorRatio:1.];
         sLastPageIndex = newIndex;
     }
+    sLastOffset = offset;
 }
 /* bug needs fixing
  2015-02-27 17:20:19.840 BDStockClient[2151:234573] offset: 1.948437 sLastPageIndex: 2 [1,2]

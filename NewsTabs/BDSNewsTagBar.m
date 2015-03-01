@@ -66,13 +66,17 @@
 }
 
 - (void)updateTagColorAtIndex:(NSInteger)index withOldIndex:(NSInteger)oldIndex andColorRatio:(float)ratio {
+    NSLog(@"updateTagColorAtIndex : %d - %d : %f", index, oldIndex, ratio);
+    if (ratio < 0 || ratio > 1) {
+        return;
+    }
     NSInteger count =  _tagButtons.count;
     UIButton *newBtn = nil;
-    if (index < count) {
+    if (index < count && index >= 0) {
         newBtn = _tagButtons[index];
     }
     UIButton *oldBtn = nil;
-    if (oldIndex < count) {
+    if (oldIndex < count && oldIndex >= 0) {
         oldBtn = _tagButtons[oldIndex];
     }
     

@@ -18,7 +18,6 @@
     NSInteger      _middleIndex;
     CGFloat        _middleOffsetX;
     CGFloat        _screenWidth;
-    BOOL           _decelerating;
     NSInteger      _indexDelta; // -1: to left; 0: disable; 1: to right.
 }
 
@@ -78,28 +77,30 @@
     NSInteger delta = MAX(_middleIndex - 1, 0);
     offsetX += delta * _screenWidth;
 //    NSLog(@"scrollViewDidScroll: %f", offsetX);
-    if (offsetX >= 0 && offsetX <= (_screenWidth * (_tagItems.count - 1))) {
-        CGFloat offset = offsetX / _screenWidth;
-//        NSLog(@"offset : %f", offset);
-        [_tagBarMgr onScrollContentPages:offset];
+    if (offsetX < 0) {
+        offsetX = 0;
+    } else  {
+        CGFloat rightEdge = (_screenWidth * (_tagItems.count - 1));
+        if (offsetX > rightEdge) {
+            offsetX = rightEdge;
+        }
     }
+    CGFloat offset = offsetX / _screenWidth;
+    //        NSLog(@"offset : %f", offset);
+    [_tagBarMgr onScrollContentPages:offset];
 }
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-//    [self chechAndResetScrollViewContent:scrollView];
-    NSLog(@"WillBeginDragging");
-}
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     if (!decelerate) {
         [self chechAndResetScrollViewContent:scrollView];
     }
-    NSLog(@"DidEndDragging: %@", decelerate ? @"decelerating" : @"not decelerating");
+//    NSLog(@"DidEndDragging: %@", decelerate ? @"decelerating" : @"not decelerating");
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     [self chechAndResetScrollViewContent:scrollView];
-    NSLog(@"DidEndDecelerating~~~~");
+//    NSLog(@"DidEndDecelerating~~~~");
 }
 
 - (void)chechAndResetScrollViewContent:(UIScrollView *)scrollView {
@@ -110,6 +111,7 @@
             _middleOffsetX = 0;
         }
         _middleIndex += _indexDelta;
+        _indexDelta = 0;
         [self resetPages];
     }
 }
@@ -216,13 +218,12 @@
         return;
     }
     
-    UIGestureRecognizerState state = scrollView.panGestureRecognizer.state;
-//    NSLog(@"pan state: %d", state);
     BOOL isDragging = NO;
+    UIGestureRecognizerState state = scrollView.panGestureRecognizer.state;
     if (state == UIGestureRecognizerStateBegan ||
         state == UIGestureRecognizerStateChanged) {
         _indexDelta = 0;
-        NSLog(@"pan state: %d", state);
+//        NSLog(@"pan state: %d", state);
         isDragging = YES;
     }
     
@@ -234,9 +235,8 @@
     
     if (contentOffsetX > _middleOffsetX + halfScreenWidth && _middleIndex + 1 < tagCount) { // scroll to right page
         if (scrollView.isDecelerating && !isDragging) {
-//            _middleOffsetX = _middleIndex - 1 ? _screenWidth * 2 : _screenWidth;
             _indexDelta = 1;
-            NSLog(@"scroll to right");
+//            NSLog(@"scroll to right");
             return;
         }
         
@@ -282,9 +282,8 @@
     } else if (contentOffsetX < _middleOffsetX - halfScreenWidth && _middleIndex - 1 > 0) { // scroll to left page
         
         if (scrollView.isDecelerating && !isDragging) {
-//            _middleOffsetX = 0;
             _indexDelta = -1;
-            NSLog(@"scroll to left");
+//            NSLog(@"scroll to left");
             return;
         }
         
