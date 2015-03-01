@@ -33,6 +33,7 @@
 		E14862931AA08262004B2F65 /* BDSNewsTagUserProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E148627E1AA08262004B2F65 /* BDSNewsTagUserProvider.m */; };
 		E14862941AA08262004B2F65 /* BDSTagList.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862801AA08262004B2F65 /* BDSTagList.m */; };
 		E14862971AA08403004B2F65 /* BDSModelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862961AA08403004B2F65 /* BDSModelProvider.m */; };
+		E176B0721AA1B7930038E557 /* BDSNewsContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E176B0711AA1B7930038E557 /* BDSNewsContainerScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		E14862801AA08262004B2F65 /* BDSTagList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSTagList.m; sourceTree = "<group>"; };
 		E14862951AA08403004B2F65 /* BDSModelProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSModelProvider.h; sourceTree = "<group>"; };
 		E14862961AA08403004B2F65 /* BDSModelProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSModelProvider.m; sourceTree = "<group>"; };
+		E176B0701AA1B7930038E557 /* BDSNewsContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsContainerScrollView.h; sourceTree = "<group>"; };
+		E176B0711AA1B7930038E557 /* BDSNewsContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsContainerScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				E148625D1AA08262004B2F65 /* BDSNewsContainerController.h */,
 				E148625E1AA08262004B2F65 /* BDSNewsContainerController.m */,
 				E148625F1AA08262004B2F65 /* BDSNewsContainerController.xib */,
+				E176B0701AA1B7930038E557 /* BDSNewsContainerScrollView.h */,
+				E176B0711AA1B7930038E557 /* BDSNewsContainerScrollView.m */,
 				E14862621AA08262004B2F65 /* BDSNewsTagBar.h */,
 				E14862631AA08262004B2F65 /* BDSNewsTagBar.m */,
 				E14862641AA08262004B2F65 /* BDSNewsTagBar.xib */,
@@ -329,6 +334,7 @@
 				E14862891AA08262004B2F65 /* BDSNewsTagDataSource.m in Sources */,
 				E14862811AA08262004B2F65 /* BDSNewsContainerController.m in Sources */,
 				E14862941AA08262004B2F65 /* BDSTagList.m in Sources */,
+				E176B0721AA1B7930038E557 /* BDSNewsContainerScrollView.m in Sources */,
 				E148628F1AA08262004B2F65 /* BDSNewsTagStockProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

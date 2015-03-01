@@ -18,6 +18,8 @@
     NSInteger      _middleIndex;
     CGFloat        _middleOffsetX;
     CGFloat        _screenWidth;
+    BOOL           _decelerating;
+    NSInteger      _indexDelta; // -1: to left; 0: disable; 1: to right.
 }
 
 @property (nonatomic, weak) IBOutlet UIScrollView       *scrollView;
@@ -83,12 +85,33 @@
     }
 }
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+//    [self chechAndResetScrollViewContent:scrollView];
+    NSLog(@"WillBeginDragging");
+}
+
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-    
+    if (!decelerate) {
+        [self chechAndResetScrollViewContent:scrollView];
+    }
+    NSLog(@"DidEndDragging: %@", decelerate ? @"decelerating" : @"not decelerating");
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    
+    [self chechAndResetScrollViewContent:scrollView];
+    NSLog(@"DidEndDecelerating~~~~");
+}
+
+- (void)chechAndResetScrollViewContent:(UIScrollView *)scrollView {
+    if (_indexDelta != 0) {
+        if (_indexDelta == 1) {
+            _middleOffsetX = _middleIndex ? _screenWidth * 2 : _screenWidth;
+        } else {
+            _middleOffsetX = 0;
+        }
+        _middleIndex += _indexDelta;
+        [self resetPages];
+    }
 }
 
 #pragma mark - Content Pages
@@ -170,14 +193,18 @@
 
 - (void)setScrollViewContentSize:(CGFloat)contentWidth {
     CGSize contentSize = _scrollView.contentSize;
-    contentSize.width = contentWidth;
-    _scrollView.contentSize = contentSize;
+    if (contentSize.width != contentWidth) {
+        contentSize.width = contentWidth;
+        _scrollView.contentSize = contentSize;
+    }
 }
 
 - (void)setScrollViewContentOffset:(CGFloat)contentOffsetX {
     CGPoint contentOffset = _scrollView.contentOffset;
-    contentOffset.x = contentOffsetX;
-    _scrollView.contentOffset = contentOffset;
+    if (contentOffset.x != contentOffsetX) {
+        contentOffset.x = contentOffsetX;
+        _scrollView.contentOffset = contentOffset;
+    }
 }
 
 - (void)resetScrollViewContent:(UIScrollView *)scrollView {
@@ -189,10 +216,32 @@
         return;
     }
     
+    UIGestureRecognizerState state = scrollView.panGestureRecognizer.state;
+//    NSLog(@"pan state: %d", state);
+    BOOL isDragging = NO;
+    if (state == UIGestureRecognizerStateBegan ||
+        state == UIGestureRecognizerStateChanged) {
+        _indexDelta = 0;
+        NSLog(@"pan state: %d", state);
+        isDragging = YES;
+    }
+    
+    if (_indexDelta != 0) {
+        return;
+    }
+    
     CGFloat halfScreenWidth = _screenWidth / 2.;
     
     if (contentOffsetX > _middleOffsetX + halfScreenWidth && _middleIndex + 1 < tagCount) { // scroll to right page
+        if (scrollView.isDecelerating && !isDragging) {
+//            _middleOffsetX = _middleIndex - 1 ? _screenWidth * 2 : _screenWidth;
+            _indexDelta = 1;
+            NSLog(@"scroll to right");
+            return;
+        }
+        
         _middleIndex++;
+        
         CGFloat offsetX = 0.;
         CGFloat totalOffset = 0;
         if (_leftController) {
@@ -231,7 +280,16 @@
         }
         [self setScrollViewContentSize:totalOffset];
     } else if (contentOffsetX < _middleOffsetX - halfScreenWidth && _middleIndex - 1 > 0) { // scroll to left page
+        
+        if (scrollView.isDecelerating && !isDragging) {
+//            _middleOffsetX = 0;
+            _indexDelta = -1;
+            NSLog(@"scroll to left");
+            return;
+        }
+        
         _middleIndex--;
+        
         CGFloat offsetX = 0.;
         CGFloat totalOffset = 0;
         BDSNewsTagController *tmpLeftController = nil;
@@ -309,13 +367,17 @@
         BDSNewsTagController *controller = [self getControllerByTagItem:leftTagItem inControllers:currentControllers];
         if (!controller || controller != _leftController) {
             if (controller) {
-                [self removeController:controller];
                 [currentControllers removeObject:controller];
+                CGRect frame = controller.view.frame;
+                if (frame.origin.x != contentOffsetX) {
+                    frame.origin.x = contentOffsetX;
+                    controller.view.frame = frame;
+                }
             } else {
                 controller = [self createNewsTagControllerWithTagItem:leftTagItem];
+                [self addControllerToScrollView:controller withOffsetX:0];
             }
             
-            [self addControllerToScrollView:controller withOffsetX:0];
             self.leftController = controller;
         } else {
             [currentControllers removeObject:controller];
@@ -331,13 +393,17 @@
         BDSNewsTagController *controller = [self getControllerByTagItem:middleTagItem inControllers:currentControllers];
         if (!controller || controller != _middleController) {
             if (controller) {
-                [self removeController:controller];
                 [currentControllers removeObject:controller];
+                CGRect frame = controller.view.frame;
+                if (frame.origin.x != contentOffsetX) {
+                    frame.origin.x = contentOffsetX;
+                    controller.view.frame = frame;
+                }
             } else {
                 controller = [self createNewsTagControllerWithTagItem:middleTagItem];
+                [self addControllerToScrollView:controller withOffsetX:contentOffsetX];
             }
             
-            [self addControllerToScrollView:controller withOffsetX:contentOffsetX];
             self.middleController = controller;
         } else {
             [currentControllers removeObject:controller];
@@ -354,13 +420,17 @@
         BDSNewsTagController *controller = [self getControllerByTagItem:rightTagItem inControllers:currentControllers];
         if (!controller || controller != _rightController) {
             if (controller) {
-                [self removeController:controller];
                 [currentControllers removeObject:controller];
+                CGRect frame = controller.view.frame;
+                if (frame.origin.x != contentOffsetX) {
+                    frame.origin.x = contentOffsetX;
+                    controller.view.frame = frame;
+                }
             } else {
                 controller = [self createNewsTagControllerWithTagItem:rightTagItem];
+                [self addControllerToScrollView:controller withOffsetX:contentOffsetX];
             }
             
-            [self addControllerToScrollView:controller withOffsetX:contentOffsetX];
             self.rightController = controller;
         } else {
             [currentControllers removeObject:controller];

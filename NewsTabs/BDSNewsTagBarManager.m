@@ -43,7 +43,7 @@
     static NSInteger sLastPageIndex = 0;
     NSInteger leftPageIndex = floorf(offset);
     NSInteger rightPageIndex = ceil(offset);
-    NSLog(@"offset: %f sLastPageIndex: %d [%d,%d]", offset, sLastPageIndex, leftPageIndex, rightPageIndex);
+//    NSLog(@"offset: %f sLastPageIndex: %d [%d,%d]", offset, sLastPageIndex, leftPageIndex, rightPageIndex);
     
     NSInteger max = 0;
     NSInteger min = 0;
