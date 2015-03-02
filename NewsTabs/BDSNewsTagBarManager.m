@@ -45,7 +45,7 @@
     
     NSInteger leftPageIndex = floorf(offset);
     NSInteger rightPageIndex = ceil(offset);
-    NSLog(@"offset: %f sLastPageIndex: %d [%d,%d]", offset, sLastPageIndex, leftPageIndex, rightPageIndex);
+    //NSLog(@"offset: %f sLastPageIndex: %d [%d,%d]", offset, sLastPageIndex, leftPageIndex, rightPageIndex);
     
     NSInteger max = 0;
     NSInteger min = 0;
@@ -61,12 +61,12 @@
     NSInteger oldIndex = sLastPageIndex;
     
     if (sLastPageIndex == min && sLastPageIndex == max) {
-        NSLog(@"--");
+        //NSLog(@"--");
 //        if (offset < sLastOffset) { // scroll to left
-//            NSLog(@"(7)");
+//            //NSLog(@"(7)");
 //            newIndex++;
 //        } else if (offset > sLastOffset) { // scroll right
-//            NSLog(@"(8)");
+//            //NSLog(@"(8)");
 //            newIndex--;
 //        }
         if (sLastPageIndex == 0) {
@@ -74,21 +74,21 @@
         }
     } else if (sLastPageIndex >= max) { // scroll to left page
         CGFloat ratio = sLastPageIndex - offset;
-        NSLog(@"<-");
+        //NSLog(@"<-");
         [_tagBar updateTagColorAtIndex:leftPageIndex withOldIndex:sLastPageIndex andColorRatio:ratio];
     } else if (sLastPageIndex <= min) { //scroll to right page
         CGFloat ratio = offset - sLastPageIndex;
-        NSLog(@"->");
+        //NSLog(@"->");
         [_tagBar updateTagColorAtIndex:rightPageIndex withOldIndex:sLastPageIndex andColorRatio:ratio];
     }
     
     if (newIndex == oldIndex) {
         if (sLastPageIndex > max) {
             newIndex = max;
-            NSLog(@"(1)");
+            //NSLog(@"(1)");
         } else if (sLastPageIndex < min) {
             newIndex = min;
-            NSLog(@"(2)");
+            //NSLog(@"(2)");
         } else {
             NSInteger lastMax = ceil(sLastOffset);
             NSInteger lastMin = floorf(sLastOffset);
@@ -96,17 +96,17 @@
             if (lastMax != lastMin) {
                 if (currMin > lastMin) { // currMin > lastMin : 1st -> 2nd; currMin < lastMin : 3rd -> 2nd
                     oldIndex = newIndex - 1;
-                    NSLog(@"(3)");
+                    //NSLog(@"(3)");
                 } else if (currMin < lastMin) {
                     oldIndex = newIndex + 1;
-                    NSLog(@"(4)");
+                    //NSLog(@"(4)");
                 }
             }
         }
     }
     
     if (newIndex != oldIndex) {
-        NSLog(@"offset: %f %f", offset, sLastOffset);
+        //NSLog(@"offset: %f %f", offset, sLastOffset);
         [_tagBar updateTagColorAtIndex:newIndex withOldIndex:oldIndex andColorRatio:1.];
         sLastPageIndex = newIndex;
     }
