@@ -25,4 +25,6 @@
 
 - (void)onScrollContentPages:(CGFloat)offset;
 
+- (void)scrollToIndex:(NSInteger)index;
+
 @end

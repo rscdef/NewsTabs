@@ -20,6 +20,7 @@
 @interface BDSNewsTagInfo : NSObject
 
 @property (nonatomic, strong) NSString  *title;
+@property (nonatomic, assign) CGFloat   originX;
 @property (nonatomic, assign) CGFloat   width;
 
 @end

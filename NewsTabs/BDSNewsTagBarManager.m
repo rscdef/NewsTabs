@@ -29,10 +29,13 @@
 
 - (void)resetTagBarWithTags:(NSArray *)tags {
     NSMutableArray *tagInfos = [NSMutableArray arrayWithCapacity:10];
+    CGFloat totalOffset = 0.;
     for (BDSTag *tag in tags) {
         BDSNewsTagInfo *tagInfo = [[BDSNewsTagInfo alloc] init];
         tagInfo.title = tag.name;
+        tagInfo.originX = totalOffset;
         tagInfo.width = 100;
+        totalOffset += tagInfo.width;
         [tagInfos addObject:tagInfo];
     }
     [self.tagBar setupWithTagInfos:tagInfos];
@@ -149,6 +152,8 @@
  
  2015-02-27 17:20:20.586 BDStockClient[2151:234573] offset: 3.000000 sLastPageIndex: 2 [3,3]
 */
+
+
 
 #pragma mark - BDSNewsTagBarDelegate
 - (void)onSelectTagAtIndex:(NSInteger)index {
