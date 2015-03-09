@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  NewsTabs
 //
-//  Created by chengfei05 on 15/2/27.
+//  Created by rscdef on 15/2/27.
 //  Copyright (c) 2015年 rscdef. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "BDSNewsContainerController.h"
+#import "RSCNewsContainerController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[BDSNewsContainerController alloc] init];
+    self.window.rootViewController = [[RSCNewsContainerController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }

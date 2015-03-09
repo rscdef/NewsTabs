@@ -12,28 +12,28 @@
 		E148621E1AA07E2B004B2F65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E148621D1AA07E2B004B2F65 /* Images.xcassets */; };
 		E14862211AA07E2B004B2F65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148621F1AA07E2B004B2F65 /* LaunchScreen.xib */; };
 		E148622D1AA07E2B004B2F65 /* NewsTabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E148622C1AA07E2B004B2F65 /* NewsTabsTests.m */; };
-		E14862811AA08262004B2F65 /* BDSNewsContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E148625E1AA08262004B2F65 /* BDSNewsContainerController.m */; };
-		E14862821AA08262004B2F65 /* BDSNewsContainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148625F1AA08262004B2F65 /* BDSNewsContainerController.xib */; };
-		E14862831AA08262004B2F65 /* BDSNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862611AA08262004B2F65 /* BDSNewsManager.m */; };
-		E14862841AA08262004B2F65 /* BDSNewsTagBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862631AA08262004B2F65 /* BDSNewsTagBar.m */; };
-		E14862851AA08262004B2F65 /* BDSNewsTagBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14862641AA08262004B2F65 /* BDSNewsTagBar.xib */; };
-		E14862861AA08262004B2F65 /* BDSNewsTagBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862661AA08262004B2F65 /* BDSNewsTagBarManager.m */; };
-		E14862871AA08262004B2F65 /* BDSNewsTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862681AA08262004B2F65 /* BDSNewsTagController.m */; };
-		E14862881AA08262004B2F65 /* BDSNewsTagController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14862691AA08262004B2F65 /* BDSNewsTagController.xib */; };
-		E14862891AA08262004B2F65 /* BDSNewsTagDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E148626B1AA08262004B2F65 /* BDSNewsTagDataSource.m */; };
-		E148628A1AA08262004B2F65 /* BDSNewsTagDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E148626D1AA08262004B2F65 /* BDSNewsTagDelegate.m */; };
-		E148628B1AA08262004B2F65 /* BDSNewsTagKeyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E148626F1AA08262004B2F65 /* BDSNewsTagKeyDataSource.m */; };
-		E148628C1AA08262004B2F65 /* BDSNewsTagKeyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862711AA08262004B2F65 /* BDSNewsTagKeyProvider.m */; };
-		E148628D1AA08262004B2F65 /* BDSNewsTagProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862731AA08262004B2F65 /* BDSNewsTagProvider.m */; };
-		E148628E1AA08262004B2F65 /* BDSNewsTagStockDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862751AA08262004B2F65 /* BDSNewsTagStockDataSource.m */; };
-		E148628F1AA08262004B2F65 /* BDSNewsTagStockProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862771AA08262004B2F65 /* BDSNewsTagStockProvider.m */; };
-		E14862901AA08262004B2F65 /* BDSNewsTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862791AA08262004B2F65 /* BDSNewsTagTableViewCell.m */; };
-		E14862911AA08262004B2F65 /* BDSNewsTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148627A1AA08262004B2F65 /* BDSNewsTagTableViewCell.xib */; };
-		E14862921AA08262004B2F65 /* BDSNewsTagUserDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E148627C1AA08262004B2F65 /* BDSNewsTagUserDataSource.m */; };
-		E14862931AA08262004B2F65 /* BDSNewsTagUserProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E148627E1AA08262004B2F65 /* BDSNewsTagUserProvider.m */; };
-		E14862941AA08262004B2F65 /* BDSTagList.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862801AA08262004B2F65 /* BDSTagList.m */; };
-		E14862971AA08403004B2F65 /* BDSModelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862961AA08403004B2F65 /* BDSModelProvider.m */; };
-		E176B0721AA1B7930038E557 /* BDSNewsContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E176B0711AA1B7930038E557 /* BDSNewsContainerScrollView.m */; };
+		E14862811AA08262004B2F65 /* RSCNewsContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E148625E1AA08262004B2F65 /* RSCNewsContainerController.m */; };
+		E14862821AA08262004B2F65 /* RSCNewsContainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148625F1AA08262004B2F65 /* RSCNewsContainerController.xib */; };
+		E14862831AA08262004B2F65 /* RSCNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862611AA08262004B2F65 /* RSCNewsManager.m */; };
+		E14862841AA08262004B2F65 /* RSCNewsTagBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862631AA08262004B2F65 /* RSCNewsTagBar.m */; };
+		E14862851AA08262004B2F65 /* RSCNewsTagBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14862641AA08262004B2F65 /* RSCNewsTagBar.xib */; };
+		E14862861AA08262004B2F65 /* RSCNewsTagBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862661AA08262004B2F65 /* RSCNewsTagBarManager.m */; };
+		E14862871AA08262004B2F65 /* RSCNewsTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862681AA08262004B2F65 /* RSCNewsTagController.m */; };
+		E14862881AA08262004B2F65 /* RSCNewsTagController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14862691AA08262004B2F65 /* RSCNewsTagController.xib */; };
+		E14862891AA08262004B2F65 /* RSCNewsTagDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E148626B1AA08262004B2F65 /* RSCNewsTagDataSource.m */; };
+		E148628A1AA08262004B2F65 /* RSCNewsTagDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E148626D1AA08262004B2F65 /* RSCNewsTagDelegate.m */; };
+		E148628B1AA08262004B2F65 /* RSCNewsTagKeyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E148626F1AA08262004B2F65 /* RSCNewsTagKeyDataSource.m */; };
+		E148628C1AA08262004B2F65 /* RSCNewsTagKeyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862711AA08262004B2F65 /* RSCNewsTagKeyProvider.m */; };
+		E148628D1AA08262004B2F65 /* RSCNewsTagProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862731AA08262004B2F65 /* RSCNewsTagProvider.m */; };
+		E148628E1AA08262004B2F65 /* RSCNewsTagStockDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862751AA08262004B2F65 /* RSCNewsTagStockDataSource.m */; };
+		E148628F1AA08262004B2F65 /* RSCNewsTagStockProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862771AA08262004B2F65 /* RSCNewsTagStockProvider.m */; };
+		E14862901AA08262004B2F65 /* RSCNewsTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862791AA08262004B2F65 /* RSCNewsTagTableViewCell.m */; };
+		E14862911AA08262004B2F65 /* RSCNewsTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E148627A1AA08262004B2F65 /* RSCNewsTagTableViewCell.xib */; };
+		E14862921AA08262004B2F65 /* RSCNewsTagUserDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E148627C1AA08262004B2F65 /* RSCNewsTagUserDataSource.m */; };
+		E14862931AA08262004B2F65 /* RSCNewsTagUserProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E148627E1AA08262004B2F65 /* RSCNewsTagUserProvider.m */; };
+		E14862941AA08262004B2F65 /* RSCTagList.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862801AA08262004B2F65 /* RSCTagList.m */; };
+		E14862971AA08403004B2F65 /* RSCModelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E14862961AA08403004B2F65 /* RSCModelProvider.m */; };
+		E176B0721AA1B7930038E557 /* RSCNewsContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E176B0711AA1B7930038E557 /* RSCNewsContainerScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,46 +57,46 @@
 		E14862261AA07E2B004B2F65 /* NewsTabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsTabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E148622B1AA07E2B004B2F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E148622C1AA07E2B004B2F65 /* NewsTabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTabsTests.m; sourceTree = "<group>"; };
-		E148625D1AA08262004B2F65 /* BDSNewsContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsContainerController.h; sourceTree = "<group>"; };
-		E148625E1AA08262004B2F65 /* BDSNewsContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsContainerController.m; sourceTree = "<group>"; };
-		E148625F1AA08262004B2F65 /* BDSNewsContainerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDSNewsContainerController.xib; sourceTree = "<group>"; };
-		E14862601AA08262004B2F65 /* BDSNewsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsManager.h; sourceTree = "<group>"; };
-		E14862611AA08262004B2F65 /* BDSNewsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsManager.m; sourceTree = "<group>"; };
-		E14862621AA08262004B2F65 /* BDSNewsTagBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagBar.h; sourceTree = "<group>"; };
-		E14862631AA08262004B2F65 /* BDSNewsTagBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagBar.m; sourceTree = "<group>"; };
-		E14862641AA08262004B2F65 /* BDSNewsTagBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDSNewsTagBar.xib; sourceTree = "<group>"; };
-		E14862651AA08262004B2F65 /* BDSNewsTagBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagBarManager.h; sourceTree = "<group>"; };
-		E14862661AA08262004B2F65 /* BDSNewsTagBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagBarManager.m; sourceTree = "<group>"; };
-		E14862671AA08262004B2F65 /* BDSNewsTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagController.h; sourceTree = "<group>"; };
-		E14862681AA08262004B2F65 /* BDSNewsTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagController.m; sourceTree = "<group>"; };
-		E14862691AA08262004B2F65 /* BDSNewsTagController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDSNewsTagController.xib; sourceTree = "<group>"; };
-		E148626A1AA08262004B2F65 /* BDSNewsTagDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagDataSource.h; sourceTree = "<group>"; };
-		E148626B1AA08262004B2F65 /* BDSNewsTagDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagDataSource.m; sourceTree = "<group>"; };
-		E148626C1AA08262004B2F65 /* BDSNewsTagDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagDelegate.h; sourceTree = "<group>"; };
-		E148626D1AA08262004B2F65 /* BDSNewsTagDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagDelegate.m; sourceTree = "<group>"; };
-		E148626E1AA08262004B2F65 /* BDSNewsTagKeyDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagKeyDataSource.h; sourceTree = "<group>"; };
-		E148626F1AA08262004B2F65 /* BDSNewsTagKeyDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagKeyDataSource.m; sourceTree = "<group>"; };
-		E14862701AA08262004B2F65 /* BDSNewsTagKeyProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagKeyProvider.h; sourceTree = "<group>"; };
-		E14862711AA08262004B2F65 /* BDSNewsTagKeyProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagKeyProvider.m; sourceTree = "<group>"; };
-		E14862721AA08262004B2F65 /* BDSNewsTagProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagProvider.h; sourceTree = "<group>"; };
-		E14862731AA08262004B2F65 /* BDSNewsTagProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagProvider.m; sourceTree = "<group>"; };
-		E14862741AA08262004B2F65 /* BDSNewsTagStockDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagStockDataSource.h; sourceTree = "<group>"; };
-		E14862751AA08262004B2F65 /* BDSNewsTagStockDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagStockDataSource.m; sourceTree = "<group>"; };
-		E14862761AA08262004B2F65 /* BDSNewsTagStockProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagStockProvider.h; sourceTree = "<group>"; };
-		E14862771AA08262004B2F65 /* BDSNewsTagStockProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagStockProvider.m; sourceTree = "<group>"; };
-		E14862781AA08262004B2F65 /* BDSNewsTagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagTableViewCell.h; sourceTree = "<group>"; };
-		E14862791AA08262004B2F65 /* BDSNewsTagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagTableViewCell.m; sourceTree = "<group>"; };
-		E148627A1AA08262004B2F65 /* BDSNewsTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDSNewsTagTableViewCell.xib; sourceTree = "<group>"; };
-		E148627B1AA08262004B2F65 /* BDSNewsTagUserDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagUserDataSource.h; sourceTree = "<group>"; };
-		E148627C1AA08262004B2F65 /* BDSNewsTagUserDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagUserDataSource.m; sourceTree = "<group>"; };
-		E148627D1AA08262004B2F65 /* BDSNewsTagUserProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsTagUserProvider.h; sourceTree = "<group>"; };
-		E148627E1AA08262004B2F65 /* BDSNewsTagUserProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsTagUserProvider.m; sourceTree = "<group>"; };
-		E148627F1AA08262004B2F65 /* BDSTagList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSTagList.h; sourceTree = "<group>"; };
-		E14862801AA08262004B2F65 /* BDSTagList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSTagList.m; sourceTree = "<group>"; };
-		E14862951AA08403004B2F65 /* BDSModelProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSModelProvider.h; sourceTree = "<group>"; };
-		E14862961AA08403004B2F65 /* BDSModelProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSModelProvider.m; sourceTree = "<group>"; };
-		E176B0701AA1B7930038E557 /* BDSNewsContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSNewsContainerScrollView.h; sourceTree = "<group>"; };
-		E176B0711AA1B7930038E557 /* BDSNewsContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSNewsContainerScrollView.m; sourceTree = "<group>"; };
+		E148625D1AA08262004B2F65 /* RSCNewsContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsContainerController.h; sourceTree = "<group>"; };
+		E148625E1AA08262004B2F65 /* RSCNewsContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsContainerController.m; sourceTree = "<group>"; };
+		E148625F1AA08262004B2F65 /* RSCNewsContainerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSCNewsContainerController.xib; sourceTree = "<group>"; };
+		E14862601AA08262004B2F65 /* RSCNewsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsManager.h; sourceTree = "<group>"; };
+		E14862611AA08262004B2F65 /* RSCNewsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsManager.m; sourceTree = "<group>"; };
+		E14862621AA08262004B2F65 /* RSCNewsTagBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagBar.h; sourceTree = "<group>"; };
+		E14862631AA08262004B2F65 /* RSCNewsTagBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagBar.m; sourceTree = "<group>"; };
+		E14862641AA08262004B2F65 /* RSCNewsTagBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSCNewsTagBar.xib; sourceTree = "<group>"; };
+		E14862651AA08262004B2F65 /* RSCNewsTagBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagBarManager.h; sourceTree = "<group>"; };
+		E14862661AA08262004B2F65 /* RSCNewsTagBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagBarManager.m; sourceTree = "<group>"; };
+		E14862671AA08262004B2F65 /* RSCNewsTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagController.h; sourceTree = "<group>"; };
+		E14862681AA08262004B2F65 /* RSCNewsTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagController.m; sourceTree = "<group>"; };
+		E14862691AA08262004B2F65 /* RSCNewsTagController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSCNewsTagController.xib; sourceTree = "<group>"; };
+		E148626A1AA08262004B2F65 /* RSCNewsTagDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagDataSource.h; sourceTree = "<group>"; };
+		E148626B1AA08262004B2F65 /* RSCNewsTagDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagDataSource.m; sourceTree = "<group>"; };
+		E148626C1AA08262004B2F65 /* RSCNewsTagDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagDelegate.h; sourceTree = "<group>"; };
+		E148626D1AA08262004B2F65 /* RSCNewsTagDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagDelegate.m; sourceTree = "<group>"; };
+		E148626E1AA08262004B2F65 /* RSCNewsTagKeyDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagKeyDataSource.h; sourceTree = "<group>"; };
+		E148626F1AA08262004B2F65 /* RSCNewsTagKeyDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagKeyDataSource.m; sourceTree = "<group>"; };
+		E14862701AA08262004B2F65 /* RSCNewsTagKeyProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagKeyProvider.h; sourceTree = "<group>"; };
+		E14862711AA08262004B2F65 /* RSCNewsTagKeyProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagKeyProvider.m; sourceTree = "<group>"; };
+		E14862721AA08262004B2F65 /* RSCNewsTagProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagProvider.h; sourceTree = "<group>"; };
+		E14862731AA08262004B2F65 /* RSCNewsTagProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagProvider.m; sourceTree = "<group>"; };
+		E14862741AA08262004B2F65 /* RSCNewsTagStockDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagStockDataSource.h; sourceTree = "<group>"; };
+		E14862751AA08262004B2F65 /* RSCNewsTagStockDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagStockDataSource.m; sourceTree = "<group>"; };
+		E14862761AA08262004B2F65 /* RSCNewsTagStockProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagStockProvider.h; sourceTree = "<group>"; };
+		E14862771AA08262004B2F65 /* RSCNewsTagStockProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagStockProvider.m; sourceTree = "<group>"; };
+		E14862781AA08262004B2F65 /* RSCNewsTagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagTableViewCell.h; sourceTree = "<group>"; };
+		E14862791AA08262004B2F65 /* RSCNewsTagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagTableViewCell.m; sourceTree = "<group>"; };
+		E148627A1AA08262004B2F65 /* RSCNewsTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSCNewsTagTableViewCell.xib; sourceTree = "<group>"; };
+		E148627B1AA08262004B2F65 /* RSCNewsTagUserDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagUserDataSource.h; sourceTree = "<group>"; };
+		E148627C1AA08262004B2F65 /* RSCNewsTagUserDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagUserDataSource.m; sourceTree = "<group>"; };
+		E148627D1AA08262004B2F65 /* RSCNewsTagUserProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsTagUserProvider.h; sourceTree = "<group>"; };
+		E148627E1AA08262004B2F65 /* RSCNewsTagUserProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsTagUserProvider.m; sourceTree = "<group>"; };
+		E148627F1AA08262004B2F65 /* RSCTagList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCTagList.h; sourceTree = "<group>"; };
+		E14862801AA08262004B2F65 /* RSCTagList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCTagList.m; sourceTree = "<group>"; };
+		E14862951AA08403004B2F65 /* RSCModelProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCModelProvider.h; sourceTree = "<group>"; };
+		E14862961AA08403004B2F65 /* RSCModelProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCModelProvider.m; sourceTree = "<group>"; };
+		E176B0701AA1B7930038E557 /* RSCNewsContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCNewsContainerScrollView.h; sourceTree = "<group>"; };
+		E176B0711AA1B7930038E557 /* RSCNewsContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCNewsContainerScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,46 +138,46 @@
 		E148620F1AA07E2B004B2F65 /* NewsTabs */ = {
 			isa = PBXGroup;
 			children = (
-				E148625D1AA08262004B2F65 /* BDSNewsContainerController.h */,
-				E148625E1AA08262004B2F65 /* BDSNewsContainerController.m */,
-				E148625F1AA08262004B2F65 /* BDSNewsContainerController.xib */,
-				E176B0701AA1B7930038E557 /* BDSNewsContainerScrollView.h */,
-				E176B0711AA1B7930038E557 /* BDSNewsContainerScrollView.m */,
-				E14862621AA08262004B2F65 /* BDSNewsTagBar.h */,
-				E14862631AA08262004B2F65 /* BDSNewsTagBar.m */,
-				E14862641AA08262004B2F65 /* BDSNewsTagBar.xib */,
-				E14862651AA08262004B2F65 /* BDSNewsTagBarManager.h */,
-				E14862661AA08262004B2F65 /* BDSNewsTagBarManager.m */,
-				E14862671AA08262004B2F65 /* BDSNewsTagController.h */,
-				E14862681AA08262004B2F65 /* BDSNewsTagController.m */,
-				E14862691AA08262004B2F65 /* BDSNewsTagController.xib */,
-				E148626A1AA08262004B2F65 /* BDSNewsTagDataSource.h */,
-				E148626B1AA08262004B2F65 /* BDSNewsTagDataSource.m */,
-				E148626C1AA08262004B2F65 /* BDSNewsTagDelegate.h */,
-				E148626D1AA08262004B2F65 /* BDSNewsTagDelegate.m */,
-				E148626E1AA08262004B2F65 /* BDSNewsTagKeyDataSource.h */,
-				E148626F1AA08262004B2F65 /* BDSNewsTagKeyDataSource.m */,
-				E14862701AA08262004B2F65 /* BDSNewsTagKeyProvider.h */,
-				E14862711AA08262004B2F65 /* BDSNewsTagKeyProvider.m */,
-				E14862951AA08403004B2F65 /* BDSModelProvider.h */,
-				E14862961AA08403004B2F65 /* BDSModelProvider.m */,
-				E14862721AA08262004B2F65 /* BDSNewsTagProvider.h */,
-				E14862731AA08262004B2F65 /* BDSNewsTagProvider.m */,
-				E14862741AA08262004B2F65 /* BDSNewsTagStockDataSource.h */,
-				E14862751AA08262004B2F65 /* BDSNewsTagStockDataSource.m */,
-				E14862761AA08262004B2F65 /* BDSNewsTagStockProvider.h */,
-				E14862771AA08262004B2F65 /* BDSNewsTagStockProvider.m */,
-				E14862781AA08262004B2F65 /* BDSNewsTagTableViewCell.h */,
-				E14862791AA08262004B2F65 /* BDSNewsTagTableViewCell.m */,
-				E148627A1AA08262004B2F65 /* BDSNewsTagTableViewCell.xib */,
-				E148627B1AA08262004B2F65 /* BDSNewsTagUserDataSource.h */,
-				E148627C1AA08262004B2F65 /* BDSNewsTagUserDataSource.m */,
-				E148627D1AA08262004B2F65 /* BDSNewsTagUserProvider.h */,
-				E148627E1AA08262004B2F65 /* BDSNewsTagUserProvider.m */,
-				E148627F1AA08262004B2F65 /* BDSTagList.h */,
-				E14862801AA08262004B2F65 /* BDSTagList.m */,
-				E14862601AA08262004B2F65 /* BDSNewsManager.h */,
-				E14862611AA08262004B2F65 /* BDSNewsManager.m */,
+				E148625D1AA08262004B2F65 /* RSCNewsContainerController.h */,
+				E148625E1AA08262004B2F65 /* RSCNewsContainerController.m */,
+				E148625F1AA08262004B2F65 /* RSCNewsContainerController.xib */,
+				E176B0701AA1B7930038E557 /* RSCNewsContainerScrollView.h */,
+				E176B0711AA1B7930038E557 /* RSCNewsContainerScrollView.m */,
+				E14862621AA08262004B2F65 /* RSCNewsTagBar.h */,
+				E14862631AA08262004B2F65 /* RSCNewsTagBar.m */,
+				E14862641AA08262004B2F65 /* RSCNewsTagBar.xib */,
+				E14862651AA08262004B2F65 /* RSCNewsTagBarManager.h */,
+				E14862661AA08262004B2F65 /* RSCNewsTagBarManager.m */,
+				E14862671AA08262004B2F65 /* RSCNewsTagController.h */,
+				E14862681AA08262004B2F65 /* RSCNewsTagController.m */,
+				E14862691AA08262004B2F65 /* RSCNewsTagController.xib */,
+				E148626A1AA08262004B2F65 /* RSCNewsTagDataSource.h */,
+				E148626B1AA08262004B2F65 /* RSCNewsTagDataSource.m */,
+				E148626C1AA08262004B2F65 /* RSCNewsTagDelegate.h */,
+				E148626D1AA08262004B2F65 /* RSCNewsTagDelegate.m */,
+				E148626E1AA08262004B2F65 /* RSCNewsTagKeyDataSource.h */,
+				E148626F1AA08262004B2F65 /* RSCNewsTagKeyDataSource.m */,
+				E14862701AA08262004B2F65 /* RSCNewsTagKeyProvider.h */,
+				E14862711AA08262004B2F65 /* RSCNewsTagKeyProvider.m */,
+				E14862951AA08403004B2F65 /* RSCModelProvider.h */,
+				E14862961AA08403004B2F65 /* RSCModelProvider.m */,
+				E14862721AA08262004B2F65 /* RSCNewsTagProvider.h */,
+				E14862731AA08262004B2F65 /* RSCNewsTagProvider.m */,
+				E14862741AA08262004B2F65 /* RSCNewsTagStockDataSource.h */,
+				E14862751AA08262004B2F65 /* RSCNewsTagStockDataSource.m */,
+				E14862761AA08262004B2F65 /* RSCNewsTagStockProvider.h */,
+				E14862771AA08262004B2F65 /* RSCNewsTagStockProvider.m */,
+				E14862781AA08262004B2F65 /* RSCNewsTagTableViewCell.h */,
+				E14862791AA08262004B2F65 /* RSCNewsTagTableViewCell.m */,
+				E148627A1AA08262004B2F65 /* RSCNewsTagTableViewCell.xib */,
+				E148627B1AA08262004B2F65 /* RSCNewsTagUserDataSource.h */,
+				E148627C1AA08262004B2F65 /* RSCNewsTagUserDataSource.m */,
+				E148627D1AA08262004B2F65 /* RSCNewsTagUserProvider.h */,
+				E148627E1AA08262004B2F65 /* RSCNewsTagUserProvider.m */,
+				E148627F1AA08262004B2F65 /* RSCTagList.h */,
+				E14862801AA08262004B2F65 /* RSCTagList.m */,
+				E14862601AA08262004B2F65 /* RSCNewsManager.h */,
+				E14862611AA08262004B2F65 /* RSCNewsManager.m */,
 				E14862141AA07E2B004B2F65 /* AppDelegate.h */,
 				E14862151AA07E2B004B2F65 /* AppDelegate.m */,
 				E148621D1AA07E2B004B2F65 /* Images.xcassets */,
@@ -293,12 +293,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14862821AA08262004B2F65 /* BDSNewsContainerController.xib in Resources */,
-				E14862911AA08262004B2F65 /* BDSNewsTagTableViewCell.xib in Resources */,
-				E14862851AA08262004B2F65 /* BDSNewsTagBar.xib in Resources */,
+				E14862821AA08262004B2F65 /* RSCNewsContainerController.xib in Resources */,
+				E14862911AA08262004B2F65 /* RSCNewsTagTableViewCell.xib in Resources */,
+				E14862851AA08262004B2F65 /* RSCNewsTagBar.xib in Resources */,
 				E14862211AA07E2B004B2F65 /* LaunchScreen.xib in Resources */,
 				E148621E1AA07E2B004B2F65 /* Images.xcassets in Resources */,
-				E14862881AA08262004B2F65 /* BDSNewsTagController.xib in Resources */,
+				E14862881AA08262004B2F65 /* RSCNewsTagController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,26 +316,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E14862831AA08262004B2F65 /* BDSNewsManager.m in Sources */,
-				E14862921AA08262004B2F65 /* BDSNewsTagUserDataSource.m in Sources */,
+				E14862831AA08262004B2F65 /* RSCNewsManager.m in Sources */,
+				E14862921AA08262004B2F65 /* RSCNewsTagUserDataSource.m in Sources */,
 				E14862161AA07E2B004B2F65 /* AppDelegate.m in Sources */,
-				E14862971AA08403004B2F65 /* BDSModelProvider.m in Sources */,
-				E14862871AA08262004B2F65 /* BDSNewsTagController.m in Sources */,
-				E148628A1AA08262004B2F65 /* BDSNewsTagDelegate.m in Sources */,
-				E14862931AA08262004B2F65 /* BDSNewsTagUserProvider.m in Sources */,
-				E148628D1AA08262004B2F65 /* BDSNewsTagProvider.m in Sources */,
-				E14862841AA08262004B2F65 /* BDSNewsTagBar.m in Sources */,
-				E14862861AA08262004B2F65 /* BDSNewsTagBarManager.m in Sources */,
-				E148628B1AA08262004B2F65 /* BDSNewsTagKeyDataSource.m in Sources */,
-				E148628E1AA08262004B2F65 /* BDSNewsTagStockDataSource.m in Sources */,
-				E148628C1AA08262004B2F65 /* BDSNewsTagKeyProvider.m in Sources */,
-				E14862901AA08262004B2F65 /* BDSNewsTagTableViewCell.m in Sources */,
+				E14862971AA08403004B2F65 /* RSCModelProvider.m in Sources */,
+				E14862871AA08262004B2F65 /* RSCNewsTagController.m in Sources */,
+				E148628A1AA08262004B2F65 /* RSCNewsTagDelegate.m in Sources */,
+				E14862931AA08262004B2F65 /* RSCNewsTagUserProvider.m in Sources */,
+				E148628D1AA08262004B2F65 /* RSCNewsTagProvider.m in Sources */,
+				E14862841AA08262004B2F65 /* RSCNewsTagBar.m in Sources */,
+				E14862861AA08262004B2F65 /* RSCNewsTagBarManager.m in Sources */,
+				E148628B1AA08262004B2F65 /* RSCNewsTagKeyDataSource.m in Sources */,
+				E148628E1AA08262004B2F65 /* RSCNewsTagStockDataSource.m in Sources */,
+				E148628C1AA08262004B2F65 /* RSCNewsTagKeyProvider.m in Sources */,
+				E14862901AA08262004B2F65 /* RSCNewsTagTableViewCell.m in Sources */,
 				E14862131AA07E2B004B2F65 /* main.m in Sources */,
-				E14862891AA08262004B2F65 /* BDSNewsTagDataSource.m in Sources */,
-				E14862811AA08262004B2F65 /* BDSNewsContainerController.m in Sources */,
-				E14862941AA08262004B2F65 /* BDSTagList.m in Sources */,
-				E176B0721AA1B7930038E557 /* BDSNewsContainerScrollView.m in Sources */,
-				E148628F1AA08262004B2F65 /* BDSNewsTagStockProvider.m in Sources */,
+				E14862891AA08262004B2F65 /* RSCNewsTagDataSource.m in Sources */,
+				E14862811AA08262004B2F65 /* RSCNewsContainerController.m in Sources */,
+				E14862941AA08262004B2F65 /* RSCTagList.m in Sources */,
+				E176B0721AA1B7930038E557 /* RSCNewsContainerScrollView.m in Sources */,
+				E148628F1AA08262004B2F65 /* RSCNewsTagStockProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
